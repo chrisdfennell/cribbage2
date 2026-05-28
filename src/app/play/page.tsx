@@ -199,7 +199,7 @@ export default function PlayPage() {
       </header>
 
       {/* Board */}
-      <div className="relative">
+      <div className="relative max-w-4xl mx-auto w-full">
         <CribbageBoard tracks={tracks} />
         {/* floating score pops */}
         <AnimatePresence>

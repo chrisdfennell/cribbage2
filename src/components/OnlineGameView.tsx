@@ -272,7 +272,7 @@ export function OnlineGameView({
         </div>
       </header>
 
-      <div className="relative">
+      <div className="relative max-w-4xl mx-auto w-full">
         <CribbageBoard tracks={tracks} />
         <AnimatePresence>
           {state.pendingScorePops.map((sp, idx) => (
