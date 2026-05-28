@@ -10,6 +10,10 @@ primary_region = 'iad'
 
 [env]
   PORT = '3000'
+  # Bind the Next.js standalone server to all interfaces inside the container.
+  # Fly auto-sets HOSTNAME to the machine name, which would bind to the wrong
+  # address and make the app unreachable through fly-proxy.
+  HOSTNAME = '0.0.0.0'
 
 [http_service]
   internal_port = 3000
