@@ -4,7 +4,7 @@
 # pin to one machine and disable auto-scaling. If multiple machines ran, room
 # codes created on one would not be visible on another.
 
-app = "cribbage2"
+app = "cribbage"
 primary_region = "iad"   # change to your closest region: sjc, ord, lhr, fra, syd, ...
 
 [build]
