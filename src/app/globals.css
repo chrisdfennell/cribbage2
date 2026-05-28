@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background: radial-gradient(
+    ellipse at center,
+    #17593a 0%,
+    #0c3823 60%,
+    #061a11 100%
+  );
+  color: #f0e7d0;
+  min-height: 100vh;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+body {
+  background-image:
+    radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(0, 0, 0, 0.15) 60%
+    ),
+    repeating-radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.012),
+      rgba(255, 255, 255, 0.012) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+}
+
+@layer utilities {
+  .felt-bg {
+    background-image:
+      radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 0.04) 0%,
+        rgba(0, 0, 0, 0.25) 70%
+      ),
+      linear-gradient(135deg, #1b6a44 0%, #0f3d28 100%);
+  }
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+}
